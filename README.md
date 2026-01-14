@@ -22,3 +22,32 @@ This project focuses on **string parsing, input validation, base arithmetic, and
     ```bash
     ./base_converter        # On Linux/macOS
     ```
+## Interaction example
+```
+Enter the base to convert from: 16
+Enter the number in that base: F
+Enter wanted base to convert to: 2
+~~~~~~~~~~~~~~~~~~~~
+Converted number: 1111
+~~~~~~~~~~~~~~~~~~~~
+Do you want to perform another conversion? (y/n): y
+Enter the base to convert from: 36
+Enter the number in that base: ZzZ
+Enter wanted base to convert to: 36
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Same base - no conversion needed!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Do you want to perform another conversion? (y/n): y
+Enter the base to convert from: 35
+Enter the number in that base: Z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Error: 'Z' is not a valid number in base 35.
+Base 35 uses the following digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F G H I J K L M N O P Q R S T U V W X Y
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter the number in that base: y
+Enter wanted base to convert to: 15
+~~~~~~~~~~~~~~~~~~~~
+Converted number: 24
+~~~~~~~~~~~~~~~~~~~~
+Do you want to perform another conversion? (y/n): n
+```
